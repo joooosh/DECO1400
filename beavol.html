@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="images/logo1.jpg" />   
+		<title>Greatest Grandkids</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	
+
+	</head>
+	<body>
+		<div>
+			<header>
+				<img src="images/logo1.jpg">
+				<h1>Greatest Grandkids</h1>
+				<a  class="right" href="contact.html" >Contact us</a>
+				<h3>for people who need care</h3>
+				<nav>
+					<ul class="navbar">
+						<li><a href="index.html">Home</a>
+						<li><a href="aboutus.html">About Us</a>
+						<li><a href="aboutvol.html">About Volunteering</a>
+						<li><a href="beavol.html">Be a Volunteer</a>
+						<li><a href="findavol.html">Find a Volunteer</a>
+					</ul>
+				</nav>
+			</header>
+		</div>
+	
+		<div id="tip">
+
+			<p>
+			If you are interested in any of our volunteering opportunities, please register your interest using the form. 
+			</P>
+			<p>If you are unsure as to whether you'd like to volunteer, go to
+			<a href="aboutvol.html">About Volunteering</a>.
+			</p>
+			
+		</div>
+		<div id="form">
+			<form method='get' action='#' id="frm">
+			<fieldset>
+				<legend>Be a Volunteer</legend>
+					<p><strong>Gender:</strong>
+						<input type="radio" name="gender" id="male" value="male" />
+						<label >Male </label>
+						<input type="radio" name="gender" id="female" value="female" />
+						<label>Female</label>
+						
+					</p>
+					
+					<p><!--I use validateForm function once this input is filled.The code is in "js/validation.js"-->
+						<label ><strong>Last Name(*):</strong></label>
+						<input type="text" id="lname" name="lname"/>
+					</p>
+					
+					<p><!--I use validateForm function once this input is filled-->
+						<label ><strong>First Name(*):</strong></label>                  
+						<input type="text" id="fname" name="fname"/>
+					</p>
+					
+					
+					<p>
+						<label><strong> Age:</strong></label>
+						<input type="text" id="age" name="age">
+					</p>
+					<p>
+						<label ><strong>Phone Number:</strong></label>
+						<input type="text" id="pnumber" name="address">
+					</p>
+					<p><!--I use validateForm function once this input is filled-->
+						<label ><strong>Address(*):</strong></label>
+						<input type="text" id="address" placeholder="unit/building,street,suburb" name="address">
+					</p>
+					<p><!--I use validateForm function once this input is filled-->
+						<label ><strong>Email Adress(*):</strong></label>
+						<input type="email" placeholder="xx@xx.com" id="email" name="email"/>
+					</p>
+			
+					<p>
+						<label ><strong>What days would you be willing to volunteer:</strong></label>
+					</p>
+					<p>
+						<label >Monday</label>
+						<input type="checkbox" id="Monday" value="Monday">
+						<label >Tuesday</label>
+						<input type="checkbox" id="Tuesday" value="Tuesday">
+						<label >Wednesday</label>
+						<input type="checkbox" id="Wednesday" value="Wednesday">
+						<label >Thursday</label>
+						<input type="checkbox" id="Thursday" value="Thursday">
+						<label >Friday</label>
+						<input type="checkbox" id="Friday" value="Friday">
+						<label >Saturday</label>
+						<input type="checkbox" id="Saturday" value="Saturday">
+						<label >Sunday</label>
+						<input type="checkbox" id="Sunday" value="Sunday">
+						<label>I'm not sure</label>
+						<input type="checkbox" id="notsure" value="notsure">
+					</p>
+					<p>
+						<label ><strong>Additional Comments...</strong></label>
+					</p>
+					<p>
+						<textarea cols="100" rows="5" name="message" id="message">
+						</textarea>
+					</p>
+					<p>(* is required)</p>
+					<p>
+					<!-- Once all the required inputs are filled,this button will become active .
+					Once this button is clicked,it will check if the email is valid. The code is in "js/validation.js"
+					-->
+					<button id="submit" type="button" class="">SUBMIT</button>
+				
+					</p>
+			</fieldset>
+			</form>
+		</div>
+		
+		
+		<div >
+			<footer>
+
+				<p>Copyright © 2019 Greatest Grandkids. All rights reserved.</p>
+			</footer>
+		</div>	
+		<script type="text/javascript"  src="js/validation.js"></script>			
+	</body>
+</html>
+		
